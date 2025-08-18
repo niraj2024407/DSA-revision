@@ -1,8 +1,7 @@
 package Recursion;
 
-public class swapingrecursion2 {
-    public static void printArray(int[] arr){
-        helper(arr, 0, arr.length-1);
+public class swapingrecursion1 {
+    public static void printArray(int[] arr, int n){
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]+" ");
         }
@@ -23,8 +22,11 @@ public class swapingrecursion2 {
 
 
     public static void main(String[] args) {
+
+        int n = 5;
         int[] arr = { 5, 4, 3, 2, 1};
-        printArray(arr);
+        helper(arr, 0, n-1);
+        printArray(arr, n);
 
     }
 }
